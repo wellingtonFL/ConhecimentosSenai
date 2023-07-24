@@ -1,0 +1,111 @@
+<html>
+<body>
+
+<p>Aperte o botão:</p>
+
+<button id="bt" onclick="enquanto()">OK</button>
+
+<h2>JavaScript while</h2>
+<p id="meuvetor1"></p>
+<p id="meuVetor2"></p>
+<p id="meuVetor3"></p>
+
+<script>
+function enquanto()
+{
+meuVetor = new Array(8);
+var tab= parseInt(document.getElementById("bt").value);
+var text= "<table border=1><tr>"
+var i = 0;
+while (i < 8) {
+    var aaa = Math.floor((Math.random() * 10) + 1);
+	meuVetor[i]=aaa;
+    i++;
+}
+
+
+i=0;
+while(i<8){
+    text+="<td>" +meuVetor[i] + "</td>";
+   i++;
+   
+}
+
+
+
+
+
+text+="</tr></table>"
+document.getElementById("meuvetor1").innerHTML = text;
+
+
+
+
+/*vetor 2*/
+
+meuVetor2 = new Array(8);
+var tab= parseInt(document.getElementById("bt").value);
+var text= "<table border=1><tr>"
+var i = 0;
+while (i < 8) {
+    var aaa = Math.floor((Math.random() * 10) + 1);
+	meuVetor2[i]=aaa;
+    i++;
+}
+
+
+i=0;
+while(i<8){
+    text+="<td>" +meuVetor2[i] + "</td>";
+   i++;
+   
+}
+
+
+
+
+
+text+="</tr></table>"
+document.getElementById("meuVetor2").innerHTML = text;
+
+
+
+/*vetor 3*/
+
+
+meuVetor3 = new Array(8);
+var tab= parseInt(document.getElementById("bt").value);
+var text= "<table border=1><tr>"
+var i = 0;
+while (i < 8) {
+    var aaa = Math.floor((Math.random() * 10) + 1);
+	meuVetor3[i]=aaa;
+    i++;
+}
+
+
+i=0;
+while(i<8){
+    text+="<td>" +(meuVetor[i] + meuVetor2[i])+ "</td>";
+   i++;
+   
+}
+
+
+
+
+text+="</tr></table>"
+document.getElementById("meuVetor3").innerHTML = text;
+
+
+
+
+
+    
+<!--Valor começa a contar do primeiro numero e vetor começa do zero-->
+       
+
+}
+</script>
+</body>
+</html>

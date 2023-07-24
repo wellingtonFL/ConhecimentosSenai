@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+    <button onclick="gerarMatriz()">Gerar Matriz</button>
+     <h2 id="matriz"></h2>
+
+
+<script>
+function gerarMatriz() {
+  let matriz = [];
+  let numerosSorteados = new Set();
+  
+  for (let i = 0; i < 5; i++) {
+    matriz[i] = [];
+    for (let j = 0; j < 5; j++) {
+      let numeroSorteado;
+      do {
+        numeroSorteado = Math.floor(Math.random() * 10);
+      } while (numerosSorteados.has(numeroSorteado));
+      numerosSorteados.add(numeroSorteado);
+      matriz[i][j] = numeroSorteado;
+    }
+    numerosSorteados.clear();
+  }
+  
+  let matrizHTML = "";
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+      matrizHTML += matriz[i][j] + " ";
+    }
+    matrizHTML += "<br>";
+  }
+  document.getElementById("matriz").innerHTML = matrizHTML;}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body id="corpo">
+
+
+
+<button id="bt" onclick="testar()">dadinho</button>
+
+<p id="demo"></p>
+<div id="div1"></div>
+
+
+
+
+
+
+
+
+<script>
+function testar() {
+
+var objcel1=document.getElementById('div1');
+    var a= Math.floor((Math.random()*6)+1);
+	
+	
+	
+    if (a==1) {
+        txt = "";
+		objcel1.className='dado1';
+		
+    } 
+	
+	if (a==2) {
+        txt = "";
+		objcel1.className='dado2';
+    } 
+	if (a==3) {
+        txt = "";
+		objcel1.className='dado3';
+    } 
+    if (a==4) {
+        txt = "";
+		objcel1.className='dado4';
+    } 
+    if (a==5) {
+        txt = "";
+		objcel1.className='dado5';
+    } 
+
+    if (a==6) {
+        txt = "";
+		objcel1.className='dado6';
+    } 
+
+
+	if (a>6) {
+        txt = "";
+		objcel1.className='fundo3';
+    }
+    document.getElementById("div1").innerHTML = txt;
+   
+}
+
+
+
+
+
+</script>
+
+
+<img src="img\lion2.jpg" alt="" id="fill">
+</body>
+</html>

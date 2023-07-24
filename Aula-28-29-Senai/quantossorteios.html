@@ -1,0 +1,142 @@
+<html>
+<body>
+
+<p>Programa do Robsão</p>
+
+<button id="bt" onclick="aaa()">OK</button>
+<button id="btn2" onclick="sorteio()">Quantas vezes </button>
+
+<h2>SENAI</h2>
+<p id="demo1"></p><br><br>
+<p id="demo2"></p><br><br>
+<p id="demo3"></p><br><br>
+<p id="txt1"></p><br><br>
+<script>
+function aaa()
+{
+
+var tab= parseInt(document.getElementById("bt").value);
+var i = 0;
+var iMax = 10;
+var jMax = 6;
+var cont=1;
+
+var sorteio = new Array();
+var text1="";
+
+ while (cont!= 0){
+ cont =0;
+ 
+
+for (i=0;i<6;i++) {
+   var aaa = Math.floor((Math.random() * 6) + 1);
+	sorteio[i]="|"+aaa+"|";
+ }
+   
+
+ for( i=0;i<6-1;i++){
+ for( j = i+1; j <6;j++){
+if (sorteio[j] == sorteio[i]) {
+  cont++;
+}
+ }
+}
+}
+
+for (i=0;i<6;i++) {
+ text1 += sorteio[i]+"    ";
+ }
+document.getElementById("demo1").innerHTML = text1;
+
+
+
+
+if (i[0]== j[1]) {
+  cont++;
+}
+
+if (i[0]== j[2]) {
+  cont++;
+}
+
+if (i[0]== j[3]) {
+  cont++;
+}
+
+if (i[0]== j[4]) {
+  cont++;
+}
+
+if (i[0]== j[5]) {
+  cont++;
+}
+/* segunda parte*/
+
+if (i[1]== j[2]) {
+  cont++;
+}
+
+if (i[1]== j[3]) {
+  cont++;
+}
+
+if (i[1]== j[4]) {
+  cont++;
+}
+
+if (i[1]== j[5]) {
+  cont++;
+}
+
+
+
+/* terceira parte*/
+
+if (i[2]== j[3]) {
+  cont++;
+}
+
+if (i[2]== j[4]) {
+  cont++;
+}
+
+if (i[2]== j[5]) {
+  cont++;
+}
+
+
+/* quarta parte*/
+
+if (i[3]== j[4]) {
+  cont++;
+}
+
+if (i[3]== j[5]) {
+  cont++;
+}
+
+
+/*Quinta Parte*/
+
+if (i[4]== j[5]) {
+  cont++;
+}
+document.getElementById("demo3").innerHTML = text1;
+
+
+}
+function sorteio(){
+contador=0;
+cont=0;
+while(cont<6){
+	aaa();
+	contador++;
+}
+document.getElementById('txt1').innerHTML=contador;
+}
+
+
+
+</script>
+</body>
+</html>

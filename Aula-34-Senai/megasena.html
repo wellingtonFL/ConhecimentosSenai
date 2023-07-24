@@ -1,0 +1,110 @@
+<html>
+<body>
+<button id="bt" onclick="enquanto()">OK</button>
+<h2>Vetor Bidimensional</h2>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+function enquanto()
+{
+var i,j,x,y;
+var iMax = 5;
+var jMax = 6;
+var f = new Array();
+var aaa=1;
+cont=1
+
+for (i=0;i<iMax;i++) {
+f[i]=new Array();
+           cont=1
+        
+        while(cont!=0){
+            cont=0;
+            for (j=0;j<jMax;j++) {
+            var aaa = Math.floor((Math.random() * 60) + 1);
+	            f[i][j]=aaa;
+        }
+
+
+        for( j=0;j<jMax-1;j++){
+            for( z = j+1; z <jMax;z++){
+            if (f[i][z] == f[i][j]) {
+                cont++;
+            }
+        }
+        }
+        }   
+    } 
+var text = "    ";
+for (i=0;i<iMax;i++){
+  for (j=0;j<jMax;j++) {
+    text += "     "+f[i][j]+"      ";
+    }
+text+="<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+/*Vetor de não repetição*/
+
+
+     
+  var i,j,x,y;
+  var iMax = 5;
+  var jMax = 6;
+  var f = new Array();
+  var aaa=1;
+  cont=1
+
+  for (i=0;i<iMax;i++) {
+    f[i]=new Array();
+    cont=1
+
+    while(cont!=0){
+      cont=0;
+      for (j=0;j<jMax;j++) {
+        var aaa = Math.floor((Math.random() * 60) + 1);
+        f[i][j]=aaa;
+      }
+
+      for( j=0;j<jMax-1;j++){
+        for( z = j+1; z <jMax;z++){
+          if (f[i][z] == f[i][j]) {
+            cont++;
+          }
+        }
+      }
+    }   
+  }
+
+  var meuvetor1 = new Array(6);
+
+  for (i=0;i<6;i++) {
+    var aaa = Math.floor((Math.random() * 60) + 1);
+    meuvetor1[i]=aaa;
+  }
+
+  var text = "    ";
+  for (i=0;i<iMax;i++){
+    for (j=0;j<jMax;j++) {
+      var num = f[i][j];
+      var cor = "";
+      if (meuvetor1.includes(num)) {
+        cor = "red";
+      }
+      text += "<span style='color: " + cor + "'>" + num + "</span>    ";
+    }
+    text += "<br>";
+  }
+
+  var text1="";
+  for (i=0;i<6;i++) {
+    text1 += meuvetor1[i]+"    ";
+  }
+
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo2").innerHTML = text1;
+}
+
+</script>
+</body>
+</html>

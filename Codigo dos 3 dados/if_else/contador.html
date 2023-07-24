@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+<div>
+    <center><h3 id="counter-label">0</h3></center>
+</div>
+<center>
+    <div>
+        <div onclick="testar()">Click Me</div>
+        
+    </div>
+</center>
+
+
+<script>
+var counterVal = 0;
+
+function testar() {
+    updateDisplay(++counterVal);
+}
+
+
+
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}
+
+</script>
+</body>
+</html>

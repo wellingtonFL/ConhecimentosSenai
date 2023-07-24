@@ -1,0 +1,70 @@
+html
+body
+button id=bt onclick=enquanto()OKbutton
+h2Vetor Bidimensionalh2
+p id=demop
+script
+function enquanto()
+{
+var i,j,x,y;
+var iMax = 5;
+var jMax = 10;
+var f = new Array();
+var aaa=1;
+cont=1
+
+for (i=0;iiMax;i++) {
+f[i]=new Array();
+           cont=1
+        
+        while(cont!=0){
+            cont=0;
+            for (j=0;jjMax;j++) {
+            var aaa = Math.floor((Math.random()  10) + 1);
+	            f[i][j]=aaa;
+        }
+
+
+        for( j=0;jjMax-1;j++){
+            for( z = j+1; z jMax;z++){
+            if (f[i][z] == f[i][j]) {
+                cont++;
+            }
+        }
+        }
+
+
+        
+        }
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var text = ;
+for (i=0;iiMax;i++){
+  for (j=0;jjMax;j++) {
+    text += +f[i][j]+;
+    }
+text+=br;
+}
+
+
+document.getElementById(demo).innerHTML = text;
+
+}
+script
+body
+html

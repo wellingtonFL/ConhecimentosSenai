@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body id="corpo">
+
+
+
+<button id="bt" onclick="testar()" >dadinho</button>
+
+<p id="demo"></p>
+
+ <!-- todas as divs-->
+<div id="div1"></div>
+
+  <div id="div2"></div>
+
+  <div id="div3"></div>
+
+ <h1 id="demo"></h1>
+
+<h3 id="counter-label">0</h3>
+
+       <!--<H1 onclick="incrementClick()">Click Me</H1>-->
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var counterVal = 0;
+function testar() {
+    counterVal++;
+
+var objcel1=document.getElementById('div1');
+    var a= Math.floor((Math.random()*6)+1);
+	
+	document.getElementById("demo").innerHTML=""
+    document.getElementById("counter-label").innerHTML = "";
+	
+    if (a==1) {
+        txt = "";
+		objcel1.className='dado1';
+		
+    } 
+	
+	if (a==2) {
+        txt = "";
+		objcel1.className='dado2';
+    } 
+	if (a==3) {
+        txt = "";
+		objcel1.className='dado3';
+    } 
+    if (a==4) {
+        txt = "";
+		objcel1.className='dado4';
+    } 
+    if (a==5) {
+        txt = "";
+		objcel1.className='dado5';
+    } 
+
+    if (a==6) {
+        txt = "";
+		objcel1.className='dado6';
+    } 
+
+
+    document.getElementById("div1").innerHTML = txt;
+   
+/*Dado Dois */
+
+
+    var objcel2=document.getElementById('div2');
+    var b= Math.floor((Math.random()*6)+1);
+	
+	
+	
+    if (b==1) {
+        txt = "";
+		objcel2.className='dado1';
+		
+    } 
+	
+	if (b==2) {
+        txt = "";
+		objcel2.className='dado2';
+    } 
+	if (b==3) {
+        txt = "";
+		objcel2.className='dado3';
+    } 
+    if (b==4) {
+        txt = "";
+		objcel2.className='dado4';
+    } 
+    if (b==5) {
+        txt = "";
+		objcel.className='dado5';
+    } 
+
+    if (b==6) {
+        txt = "";
+		objcel2.className='dado6';
+    } 
+
+
+
+    document.getElementById("div2").innerHTML = txt;
+
+    /*Dado Três */
+
+    var objcel3=document.getElementById('div3');
+    var c= Math.floor((Math.random()*6)+1);
+	
+	
+	
+    if (c==1) {
+        txt = "";
+		objcel3.className='dado1';
+		
+    } 
+	
+	if (c==2) {
+        txt = "";
+		objcel3.className='dado2';
+    } 
+	if (c==3) {
+        txt = "";
+		objcel3.className='dado3';
+    } 
+    if (c==4) {
+        txt = "";
+		objcel3.className='dado4';
+    } 
+    if (c==5) {
+        txt = "";
+		objcel3.className='dado5';
+    } 
+
+    if (c==6) {
+        txt = "";
+		objcel3.className='dado6';
+    } 
+
+
+
+
+    document.getElementById("div3").innerHTML = txt;
+    
+    if((a==b) && (b==c)){
+document.getElementById("demo").innerHTML="Good";
+document.getElementById("counter-label").innerHTML = counterVal;
+counterVal=0}
+
+
+
+
+   
+}
+
+
+<!--Botão de cliques-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

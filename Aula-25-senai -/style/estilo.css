@@ -1,0 +1,88 @@
+table{
+  border: 2px solid red;
+  width: 650px;
+  height: 650px;
+  margin-left: 300px;
+  margin-top: 100px;
+  
+}
+tr{
+    border: 2px solid red;
+    height: 150px;
+    width: 150px;
+}
+td{
+    border: 2px solid red;
+}
+
+
+
+ 
+/*imagens*/
+
+
+    .caixa1{
+    background-image:url(../style/img/jogo-o.png);
+  
+    background-repeat: no-repeat;
+    }
+    .caixa2{
+    background-image:url(../style/img/jogo-x.png);
+    
+    background-repeat: no-repeat;
+    }
+    
+    .caixa3{
+    background-image:url(../style/img/jogo-o.png);
+  
+    background-repeat: no-repeat;
+    }
+    
+    .caixa4{
+    background-image:url(../style/img/jogo-x.png);
+   
+    background-repeat: no-repeat;
+    }
+
+       
+    .caixa5{
+        background-image:url(../style/img/jogo-o.png);
+       
+        background-repeat: no-repeat;
+        }
+        
+  
+           
+    .caixa6{
+        background-image:url(../style/img/jogo-x.png);
+       
+        background-repeat: no-repeat;
+        }
+        
+     
+        .caixa7{
+            background-image:url(../style/img/jogo-o.png);
+           
+            background-repeat: no-repeat;
+            }
+            
+               
+    .caixa8{
+        background-image:url(../style/img/jogo-x.png);
+       
+        background-repeat: no-repeat;
+        }
+           
+    .caixa9{
+        background-image:url(../style/img/jogo-o.png);
+       
+        background-repeat: no-repeat;
+        }
+        
+      
+        
+      
+              
+    
+  
+    

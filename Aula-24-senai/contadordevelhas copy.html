@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style\estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button id="btn1" onclick="aaa()">OK </button><br>
+    <button id="btn2" onclick="sorteio()">Quantas vezes</button><br>
+
+
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                    
+    <table>
+    <tr>
+        <td id="a1">
+        
+        </td>
+        <td id="a2">
+          
+        </td>
+         <td id="a3">
+            
+        </td>
+    </tr>
+    <tr>
+        <td id="a4">
+          
+        </td>
+        <td id="a5">
+           
+        </td>
+         <td id="a6">
+             
+        </td>
+    </tr>
+    <tr>
+        <td id="a7">
+           
+        </td>
+        <td id="a8">
+          
+        </td>
+         <td id="a9">
+             
+        </td>
+    </tr>
+    </table>
+
+
+    <!--parte javascript-->
+
+    <script>
+        var cont=0;
+    function aaa()
+    
+    {
+        cont++;
+    document.getElementById("p1").innerHTML="";
+    document.getElementById("p2").innerHTML="";
+
+    //var texto =document.getElementById('inp1').text;
+    //var Valor= parseInt(document.getElementById('inp1').value);
+    var Valor1 = Math.floor((Math.random() * 2) + 1);
+    var Valor2 = Math.floor((Math.random() * 2) + 1);
+    var Valor3 = Math.floor((Math.random() * 2) + 1);
+    var Valor4 = Math.floor((Math.random() * 2) + 1);
+    var Valor5 = Math.floor((Math.random() * 2) + 1);
+    var Valor6 = Math.floor((Math.random() * 2) + 1);
+    var Valor7 = Math.floor((Math.random() * 2) + 1);
+    var Valor8 = Math.floor((Math.random() * 2) + 1);
+    var Valor9 = Math.floor((Math.random() * 2) + 1);
+
+
+    var caixa1=document.getElementById('a1');
+    var caixa2=document.getElementById('a2');
+    var caixa3=document.getElementById('a3');
+    var caixa4=document.getElementById('a4');
+    var caixa5=document.getElementById('a5');
+    var caixa6=document.getElementById('a6');
+    var caixa7=document.getElementById('a7');
+    var caixa8=document.getElementById('a8');
+    var caixa9=document.getElementById('a9');
+
+    
+    caixa1.className='caixa'+Valor1;
+    caixa2.className='caixa'+Valor2;
+    caixa3.className='caixa'+Valor3;
+    caixa4.className='caixa'+Valor4;
+    caixa5.className='caixa'+Valor5;
+    caixa6.className='caixa'+Valor6;
+    caixa7.className='caixa'+Valor7;
+    caixa8.className='caixa'+Valor8;
+    caixa9.className='caixa'+Valor9;
+    
+    if((Valor1==Valor2) && (Valor2==Valor3))
+    {
+    
+    cont++;
+    }
+  
+    if((Valor4==Valor5) && (Valor5==Valor6))
+    {
+        cont++;
+    }
+    if((Valor7==Valor8) && (Valor8==Valor9))
+    {
+        cont++;
+    }
+    if((Valor1==Valor4) && (Valor4==Valor7))
+    {
+      
+        cont++;
+    }
+    if((Valor2==Valor5) && (Valor5==Valor8))
+    {
+        cont++;
+    }
+    if((Valor3==Valor6) && (Valor6==Valor9))
+    {
+        cont++;
+    }
+    if((Valor7==Valor5) && (Valor5==Valor3))
+    {
+        cont++;
+    }
+    if((Valor1==Valor5) && (Valor5==Valor9))
+    {
+        cont++;
+    
+    }
+    if((Valor7==Valor5) && (Valor5==Valor3))
+    {
+        cont++;
+    }
+     
+    document.getElementById('p1').innerHTML=cont;
+
+    }
+    function sorteio(){
+        contador=0;
+        cont=0;
+        while(cont<3){
+            aaa();
+            contador++;
+
+        }
+        document.getElementById('p2').innerHTML=contador;
+
+    
+}
+    
+    
+    
+    </script>
+
+
+
+
+</body>
+</html>

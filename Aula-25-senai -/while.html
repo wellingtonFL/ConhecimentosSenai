@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id1">
+    <button  id="bt" onclick="enquanto()">ok</button>
+    <h2>javascript While</h2>
+    <p id="aaa"></p>
+    
+
+
+
+
+    <script>
+        function enquanto(){
+
+            var tab= parseInt(document.getElementById("id1").value);
+            var text="<table border=1><tr>";
+            var i = 1;
+            while(i <= tab){
+
+                if(i%2==0){
+                    text +="<td bgcolor='blue'>" + i + "</td>";
+                }
+                else{
+                    text +="<td bgcolor='yellow'>" + i + "</td>";
+                }
+
+                
+                i++;
+
+            }
+            document.getElementById("aaa").innerHTML=text;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

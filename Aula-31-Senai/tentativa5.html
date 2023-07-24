@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="gerarVetores()">Gerar Vetores</button>
+<h2 id="resultado"></h2>
+
+<script>
+    function gerarVetores() {
+  // Gera os vetores com valores aleatórios entre 1 e 10 sem repetição
+  var v1 = [];
+  var v2 = [];
+
+  while (v1.length < 5) {
+    var num = Math.floor(Math.random() * 10) + 1;
+
+    if (v1.indexOf(num) === -1) {
+      v1.push(num);
+    }
+  }
+
+  while (v2.length < 5) {
+    var num = Math.floor(Math.random() * 10) + 1;
+
+    if (v1.indexOf(num) === -1 && v2.indexOf(num) === -1) {
+      v2.push(num);
+    }
+  }
+
+  // Ordena os vetores com Bubble Sort
+  for (var i = 0; i < v1.length - 1; i++) {
+    for (var j = 0; j < v1.length - i - 1; j++) {
+      if (v1[j] > v1[j + 1]) {
+        var temp = v1[j];
+        v1[j] = v1[j + 1];
+        v1[j + 1] = temp;
+      }
+
+      if (v2[j] > v2[j + 1]) {
+        var temp = v2[j];
+        v2[j] = v2[j + 1];
+        v2[j + 1] = temp;
+      }
+    }
+  }
+
+  // Exibe os vetores ordenados na página
+  document.getElementById("resultado").innerText = "Vetor 1: " + v1.toString() + "\nVetor 2: " + v2.toString();
+}
+</script>
+</body>
+</html>

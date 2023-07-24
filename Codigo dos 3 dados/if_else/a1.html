@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body id="corpo">
+
+<p></p>
+Número:<input type text id="id1">
+<button id="bt" onclick="testar()">OK</button>
+<p></p>
+<p id="demo"></p>
+<div id="div1"></div>
+
+
+
+
+
+
+
+
+<script>
+function testar() {
+
+var objcel1=document.getElementById('div1');
+    var txt = "";
+	var a= parseInt(document.getElementById("id1").value);
+	
+	if (a==0) {
+        txt = "";
+		objcel1.className='fundo5';
+    } 
+	
+    if (a==1) {
+        txt = "";
+		objcel1.className='fundo1';
+		
+    } 
+	
+	if (a==2) {
+        txt = "";
+		objcel1.className='fundo';
+    } 
+	if (a==3) {
+        txt = "";
+		objcel1.className='fundo2';
+    } 
+    if (a==4) {
+        txt = "";
+		objcel1.className='fundo18';
+    } 
+
+	if (a>4) {
+        txt = "";
+		objcel1.className='fundo3';
+    }
+    document.getElementById("div1").innerHTML = txt;
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

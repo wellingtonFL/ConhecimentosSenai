@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<p>Enter com número e clique OK:</p>
+
+<button id="bt" onclick="enquanto()">OK</button>
+
+<h2>JavaScript while</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
+<script>
+function enquanto()
+{
+meuVetor = new Array(10);
+var tab= parseInt(document.getElementById("bt").value);
+var i = 0;
+while (i < 10) {
+    var aaa = Math.floor((Math.random() * 20) + 1);
+	meuVetor[i]=aaa;
+    i++;
+}
+var text = "";
+
+i=0;
+while(i<10){
+	
+   text += "<br>"+meuVetor[i];
+   i++;
+   
+}
+document.getElementById("demo").innerHTML = text;
+document.getElementById("demo1").innerHTML = meuVetor[7];
+document.getElementById("alert").innerHTML = meuVetor[0] + meuVetor[9];
+document.getElementById("demo3").innerHTML = meuVetor[2] * meuVetor[7];
+    
+<!--Valor começa a contar do primeiro numero e vetor começa do zero-->
+       
+
+}
+</script>
+</body>
+</html>

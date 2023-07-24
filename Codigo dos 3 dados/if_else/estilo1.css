@@ -1,0 +1,113 @@
+
+
+
+
+
+.fundo{
+  background-image: url(../img/lion3.jpg);
+  background-size: cover;
+}
+.fundo1{
+  background-image: url(../img/coringa.jpg);
+  background-size: cover;
+}
+
+.fundo2{
+  background-image: url(../img/lion.jpg);
+  background-size: cover;
+}
+
+
+.fundo3{
+  background-image: url(../img/lion3.jpg);
+  background-size: cover;
+}
+
+.fundo18{
+  background-image: url(../img/senai.png);
+  background-size: cover;
+}
+
+.fundo4{
+background-color:white;
+}
+
+
+
+
+
+div {
+ margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  padding: 50px;
+   display: inline-block;
+   margin-left:  500px;
+}
+
+#div2{
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  padding: 50px;
+  display: inline-block;
+  margin-left:  40px;
+
+}
+#div3{
+
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  padding: 50px;
+  display: inline-block;
+  margin-left:  40px;
+  margin-top: 80px;
+
+
+}
+
+
+
+
+
+/* Codigo Dos dados*/
+
+
+
+
+.dado1{
+  background-image: url(../img/lado1.png);
+  background-size: cover;
+}
+.dado2{
+  background-image: url(../img/lado2.png);
+  background-size: cover;
+}
+
+.dado3{
+  background-image: url(../img/dado3.png);
+  background-size: cover;
+}
+
+
+.dado4{
+  background-image: url(../img/dado4.png);
+  background-size: cover;
+}
+
+.dado5{
+  background-image: url(../img/dado5.png);
+  background-size: cover;
+}
+
+.dado6{
+  background-image: url(../img/dado6.png);
+  background-size: cover;
+}
+
+
+

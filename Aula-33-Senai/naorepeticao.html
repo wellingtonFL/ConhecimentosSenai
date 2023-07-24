@@ -1,0 +1,60 @@
+<html>
+<body>
+
+<p>Programa do Robsão</p>
+
+<button id="bt" onclick="enquanto()">OK</button>
+
+
+<h2>SENAI</h2>
+<p id="demo1"></p><br><br>
+<p id="demo2"></p><br><br>
+<p id="demo3"></p><br><br>
+
+
+<script>
+function enquanto()
+{
+
+var tab= parseInt(document.getElementById("bt").value);
+var i = 0;
+var iMax = 10;
+var jMax = 10;
+var cont=1;
+var contador=0;
+
+var meuvetor1 = new Array(10);
+var text1="";
+
+ while (cont!= 0){
+  contador++;
+ cont =0;
+ 
+
+for (i=0;i<10;i++) {
+   var aaa = Math.floor((Math.random() * 10) + 1);
+	meuvetor1[i]=aaa;
+ }
+   
+
+ for( i=0;i<10-1;i++){
+ for( j = i+1; j <10;j++){
+if (meuvetor1[j] == meuvetor1[i]) {
+  cont++;
+}
+ }
+}
+}
+
+for (i=0;i<10;i++) {
+ text1 += meuvetor1[i]+"    ";
+ }
+document.getElementById("demo1").innerHTML = text1;
+
+
+
+
+}
+</script>
+</body>
+</html>
